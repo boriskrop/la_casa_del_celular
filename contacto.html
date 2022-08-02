@@ -15,27 +15,39 @@
 	<title>Contacto</title>
 </head>
 <body>
-	<!-- inicio menu de navegación -->
-	<header class="menu">
-        <nav class="botonera">
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="productos.html">Productos</a> </li>
-                    <li><a href="nosotros.html">Nosotros</a> </li>
-                    <li><a href="#">Contacto</a></li>
-                    <li><a href="nuestra_ubicacion.html">Donde estamos</a></li>
-                </ul>
-                <a href="index.html"> <img class="logo" src="imagenes/logo_menu.jpg" alt="logo_la_casa_del_celular"
-                        title="logo" width="100" height="75"></a>
-        </nav>
-        <img class="imagen_fondo" src="imagenes/la_casa_del_celular.png" alt="grupo_celular">
-    </header>
-<!-- final menú de navegación -->
-	<h1 class="contacto">Contacto</h1>
-	
-	<h2>¡Regístrate para no perderte de ninguna de nuestras ofertas!</h2>
+ <!-- inicio menú de navegación -->
+ <header class="menu">
+	<div>
+		<a href="index.html"> <img class="logo" src="imagenes/logo_menu.jpg" alt="logo_la_casa_del_celular"
+				title="logo" width="50px"></a>
+	</div>
+	<button class="menu_btn">Menú</button>
+	<nav class="botonera">
 
-	<!-- sección formulario -->
+		<ul>
+			<li><a href="index.html">Inicio</a></li>
+			<li><a href="productos.html">Productos</a> </li>
+			<li><a href="nosotros.html">Nosotros</a> </li>
+			<li><a href="#">Contacto</a></li>
+			<li><a href="nuestra_ubicacion.html">Donde estamos</a></li>
+		</ul>
+	</nav>
+
+
+</header>
+<div>
+	<img class="imagen_fondo" src="imagenes/la_casa_del_celular.png" alt="grupo_celular">
+</div>
+<!-- final menú de navegación -->
+
+<h1 class="contacto">Contacto</h1>
+
+
+<picture>
+	<img class="fondo" src="imagenes/picture_contacto.png">
+</picture>
+<!-- sección formulario -->
+<h2 class="sub_cont">¡Regístrate para no perderte de ninguna de nuestras ofertas!</h2>
 <section class="formulario">
 
 	<div class="cuadro_form">
@@ -44,9 +56,9 @@
 			<label class="nopad">
 				Nombre
 				<input type="text" placeholder="Nombre de usuario nuevo" />
-
 			</label>
-	
+			</div>
+	<div class="contrasena">
 			<label class="sipad">
 				Contraseña
 				<input type="password" placeholder="Crea una contraseña" />
@@ -77,16 +89,14 @@
 </div>
 </section>
 <!-- final formulario -->
-<picture>
-	<img class="fondo" src="imagenes/picture_contacto.png">
-</picture>
+
 
 <div class="opinion_2">
 	<p>
 		<h3>Déjanos un comentario acá abajo para poder ayudarnos a mejorar cualquiera de tus inquietudes</h3>
 	</p>
 
-	<textarea></textarea>
+	<textarea class="comentario_contacto"></textarea>
 </div>	
 <!-- inicio footer -->
 <footer>

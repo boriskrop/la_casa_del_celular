@@ -3,100 +3,112 @@
 
 <head>
 
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>La casa del celular</title>
+    <title>La casa del celular</title>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,500;1,300;1,800&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,500;1,300;1,800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css" />
+
 
 </head>
 
 <body>
-  <!--incio menu de navegación-->
-  <header class="menu">
-    <nav class="botonera">
-      <ul>
-        <li><a href="#">Inicio</a></li>
-        <li><a href="productos.html">Productos</a> </li>
-        <li><a href="nosotros.html">Nosotros</a> </li>
-        <li><a href="contacto.html">Contacto</a></li>
-        <li><a href="nuestra_ubicacion.html">Donde estamos</a></li>
-      </ul>
 
-      <a href="index.html"> <img class="logo" src="imagenes/logo_menu.jpg" alt="logo_la_casa_del_celular" title="logo"
-          width="100" height="75"></a>
-    </nav>
-    <img class="imagen_fondo" src="imagenes/la_casa_del_celular.png" alt="grupo_celular">
+    <!-- inicio menú de navegación -->
+    <header class="menu">
+      <div>
+          <a href="index.html"> <img class="logo" src="imagenes/logo_menu.jpg" alt="logo_la_casa_del_celular"
+                  title="logo" width="50px"></a>
+      </div>
+      <button class="menu_btn">Menú</button>
+      <nav class="botonera">
+
+          <ul>
+              <li><a href="#">Inicio</a></li>
+              <li><a href="productos.html">Productos</a> </li>
+              <li><a href="nosotros.html">Nosotros</a> </li>
+              <li><a href="contacto.html">Contacto</a></li>
+              <li><a href="nuestra_ubicacion.html">Donde estamos</a></li>
+          </ul>
+      </nav>
+
+
   </header>
-  <!--final menu de naveción-->
+  <div>
+      <img class="imagen_fondo" src="imagenes/la_casa_del_celular.png" alt="grupo_celular">
+  </div>
+<!-- final menú de navegación -->
+  
+    <main>
+        <h1 class="classH1"> Lo favorito de nuestros clientes</h1>
+        <p class="info">
+            <strong>La casa del celular</strong> siempre se ha destacado por brindar un excelente servicio a las personas que han acudido a nosotros, 
+            nos destacamos principalmente por vender todo tipo de variedad de fundas, de cargadores, cables para cualquier
+            tipo de dispositivo, ya sea, un teléfono celular o una computadora. A continuación, se puede apreciar que es lo más comprado por aquellas personas que siempre han confiado en nosotros.</p>
+    </main>
 
-  <!-- breve explicación del negocio -->
-  <main>
-    <h1 class="classH1"> Lo favorito de nuestros clientes</h1>
-    <h2>hola</h2>
-    <p class="info">
-      <strong>La casa del celular</strong> siempre se ha destacado por brindar un excelente servicio a las personas que han acudido <br>
-      a nosotros, nos destacamos principalmente por vender todo tipo de variedad de fundas, de cargadores, cables para cualquier<br>
-      tipo de dispositivo, ya sea, un teléfono celular o una computadora. A continuación, se puede apreciar que es lo<br>
-      más comprado por aquellas personas que siempre han confiado en nosotros.</p>
-  </main>
-  <!-- termina explicacion -->
+    <section>
+        <h2>Catálogo de productos</h2>
+        
+        <div class="grilla">
+    
+          <div class="grid1">
+            <img src="imagenes/funda_iphone12promax.jpg" alt="funda_iphone12" title="funda_iphone12" >
+       
+          </div>
+    
+          <div class="grid2">
+            <img src="imagenes/funda_motorola_e20.jpg" alt="funda_motorola" title="funda_motorola" >
+           
+          </div>
+    
+          <div class="grid3">
+            <img src="imagenes/iphone12.png" alt="iphone12" title="iphone12">
+            
+          </div>
+    
+          <div class="grid4">
+            <img src="imagenes/motorola_e20.jpg" alt="motorola_E20" title="motorola_e20">
+           
+          </div>
+    
+          <div class="grid5">
+            <img src="imagenes/cargador_ios.jpg" alt="cargador_ios" title="cargador_ios" >
+           
+          </div>
+    
+          <div class="grid6">
+            <img src="imagenes/cargador_motorola.jpg" alt="cargador_motorola"
+              title="cargador_motorola" >
+           
+          </div>
+    
+        </div>
+      </section>
 
-  <!--Inicio catalogo de productos-->
-  <section>
-    <h2>Catálogo de productos</h2>
+      <section class="oferta">
 
-    <div class="container">
+        <h3>Te puede interesar</h3>
+    
+        <div>
+    
+          <div class="oferta oferta 1">
+            <img src="imagenes/oferta_relampago.png" alt="oferta_auriculares" title="oferta_auriculares">
+          </div>
+    
+          <div class="oferta oferta 2">
+            <img src="imagenes/oferta_relampago_dos.png" alt="oferta_apple_watch" title="oferta_apple_watch">
+          </div>
+        </div>
+      </section>
 
-      <div class="caja caja1"><img src="imagenes/funda_iphone12promax.jpg" alt="funda_iphone12" title="funda_iphone12">
-        <p>Funda iphone 12 ProMax</p>
-      </div>
-      <div class="caja caja2"><img src="imagenes/funda_motorola_e20.jpg" alt="funda_motorola" title="funda_motorola">
-        <p>Funda Motorola E20</p>
-      </div>
-      <div class="caja caja3"><img src="imagenes/iphone12.png" alt="iphone12" title="iphone12">
-        <p>iphone 12 ProxMax</p>
-      </div>
-      <div class="caja caja4"><img src="imagenes/motorola_e20.jpg" alt="motorola_E20" title="motorola_e20">
-        <p>Motorola E20</p>
-      </div>
-      <div class="caja caja5"><img src="imagenes/cargador_ios.jpg" alt="cargador_ios" title="cargador_ios">
-        <p> Cargador cargador_ios</p>
-      </div>
-      <div class="caja caja6"><img src="imagenes/cargador_motorola.jpg" alt="cargador_motorola"
-          title="cargador_motorola">
-        <p> Cargador Motorola</p>
-      </div>
-    </div>
-  </section>
-  <!--final catálogo de productos-->
-
-  <!-- ofertas -->
-  <section class="oferta">
-
-    <h3>
-      <p>Te puede interesar</p>
-    </h3>
-
-    <div>
-
-      <div class="oferta oferta 1">
-        <img src="imagenes/oferta_relampago.png" alt="oferta_auriculares" title="oferta_auriculares">
-      </div>
-
-      <div class="oferta oferta 2">
-        <img src="imagenes/oferta_relampago_dos.png" alt="oferta_apple_watch" title="oferta_apple_watch">
-      </div>
-    </div>
-  </section>
-  <!-- final ofertas -->
-  <!--inicio footer  -->
+      <!--inicio footer  -->
   <footer>
     <div>
       <span>¿Eres un cliente nuevo?</span>
@@ -110,5 +122,3 @@
   </footer>
   <!-- final footer -->
 </body>
-
-</html>

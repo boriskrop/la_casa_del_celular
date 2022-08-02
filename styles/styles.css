@@ -1,176 +1,170 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+SC&display=swap');
 
-
 html,
-body{
+body {
     margin: 0;
     padding: 0;
 }
 
-body{
+body {
     font-family: 'Open Sans', sans-serif;
-    background-color: whitesmoke;   
+    background-color: whitesmoke;
     overflow-x: hidden;
     width: 100%;
     margin: auto;
+    text-decoration: none;
 }
-/* estilo para header */
-.imagen_fondo{
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+}
+
+/* header index mobile first */
+.menu {
+    display: flex;
+    background-color: black;
+    justify-content: space-between;
+    height: 40px;
+}
+
+.menu_btn {
+    height: 20px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+
+
+.imagen_fondo {
     border: 0;
     padding: 0;
-    margin-block-start: 75px;
-   
-    height: 270px;
-    width: 100%;   
-    box-shadow: 0px 20px 40px -10px;    
+    width: 100%;
 }
 
-.logo{
-    position: fixed;
+.logo {
     top: 0;
     left: 0;
+    padding-top: 0;
+
 }
-a{
-    transition-property: color;
-    transition-duration: 0.5s;
-}
+
 .botonera{
+    display: none;
+}
+/* estilos para titulos y sub */
+h1 {
+    background-color: black;
+    color: white;
+    margin-top: 0;
+}
+
+h2 {
+    color: white;
+    text-align: center;
+    background-color: black;
+}
+
+
+/* contenido de index */
+.info {
+    text-align: center;
+    font-size: 15px;
+    margin-top: 0;
+}
+
+/* primera sección con display grid */
+.grilla {
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 20px;
+    column-gap: 20px;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+.grilla>div {
+    box-shadow: 0px 20px 40px -10px;
+    display: flex
+}
+
+.grilla img {
     width: 100%;
-    height: 75px;
-    background-color: black;
+}
+
+/* inicio de segunda sección con display flex */
+h3 {
     text-align: center;
-    font-size: 0;
-    position: fixed;
 }
 
-.botonera ul{
-
-    padding: 0;
-    font-size: 20px;
-    margin: 0;
-    list-style: none;
-}
-.botonera ul li{
-    list-style: none;
-    display: inline-block   ;
-    padding: 18px;    
-}
-
-.botonera ul li a{
-    text-decoration: none;
-    color: white;
-    font-weight: 500;
-}
-
-.botonera ul li a:hover{
-    text-decoration: underline;
-    color: rgb(251, 95, 95);
-}
-/* final estilo de header */
-/* index */
-.classH1{
-    text-align: center;
-    text-decoration: underline;
-    background-color: whitesmoke;
-    color: black;
-    height: 60px;    
-}
-
-.info{
-    background-color: whitesmoke;
-    margin: 0;
-    font-size: 20px;
-    text-align: center;    
-}
-
-h1{
-    text-align: center;
-    text-decoration: underline;
-    background-color: black;
-    height: 50px;
-    color: white;
-    margin: 40px   
-}
-
-h2{
-
-    color: white;
-    text-align: center;
-    background-color: black;
-    height: 40px;
-    margin: 40px;    
-}
-
-.container{
-    padding-bottom: 200px;
-    padding: top 0;
-    width: 100%;
+.oferta {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    border: 1px solid black;
+    flex-direction: column;
+    align-items: center;
 }
 
-.container div p{
-    font-weight: bold;
+.oferta img {
+    width: 90%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+}
+/* finaliza index */
+
+/* mobile first para productos */
+.productos{
     text-align: center;
 }
 
 .caja img{  
     box-shadow: 0.2em 0 3.5em #080707;
     background-color: whitesmoke;
-    width: 220px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
     border-radius: 30px;
-    border: 1.5px solid rgb(9, 9, 81);
+    border: 2px solid rgb(9, 9, 81);
 }
 
 .caja{
-margin: 150px;
-height: 70px;
+margin: 130px;
+height: 30px;
+margin-top: 115px;
+padding-top: 0;
 }
 
-.oferta{
-   display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.oferta img{  
- width: 110%;
- height: 250px;
-margin-top: 20px;
-margin-bottom: 20px;
-}
-/* final index */
-/* inicio html productos */
 .tit{
     color: black  ;
     text-align: center;
-    background-color: whitesmoke  ;
+    background-color: rgb(224, 65, 65)  ;
+    width: 100%;
     height: 40px;
-    margin: 40px;
-    font-size: 30px;
+    font-size: 25px;
     text-decoration: underline;
+
 }
 
-.fundas{
+.fundas {
     display: flex;
     padding-bottom: 200px;
-    padding: top 0;
-    width: 100%;
+    padding-top:  0;
+    width: 99%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     border: 1px solid black;
     text-align: center;
-}   
+}
 
 .celulares{
     display: flex;
     padding-bottom: 200px;
     padding: top 0;
-    width: 100%;
+    width: 99%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -182,19 +176,23 @@ margin-bottom: 20px;
     display: flex;
     padding-bottom: 200px;
     padding: top 0;
-    width: 100%;
+    width: 99%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     border: 1px solid black;
     text-align: center;
 }
-/* final html productos */
-/* inicio html nosotros */
+/* finaliza mobile first productos */
+/* seccion nosotros */
 .nosotros{
+    text-align: center;
+}
+
+.descripcion{
     background-color: whitesmoke;
     margin: 0;
-    font-size: 20px;
+    font-size: 14px;
     text-align: center; 
 }
 
@@ -203,132 +201,255 @@ margin-bottom: 20px;
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
-}
+    flex-wrap: wrap;
 
-.local img{
-   margin-top: 20px;
-   margin-bottom: 20px;
-   }
+}
 
 .opinión{
- text-align: center;
- background-color: whitesmoke;
- border: 1px solid black;
-}
-/* finaliza html nosotros */
-
-textarea{
-    width:400px;
-    height:100px;
-    border: 2px solid #990000
-}
-/* aplica solo para textarea de nosotros.html */
-
-/* inicio html contacto */
-.fondo{
-    border: 0;
-    padding: 0;
-    margin-block-start: 5px;
-    margin-left: 40px;
-    height: 370px;
-    width: 95%;   
-    box-shadow: 0px 20px 40px -10px;
-}
-
-.formulario {
-   text-align: center;
-   display: flex;
-   flex-direction: column; 
-   border-radius: 4px;
-   border: 2px solid red;
-   background-color: #fff;    
-}
-
-input{
-    font-weight: 200;
-    font-size: 28px;
-    line-height: 1px;
-    text-align: center;    
-}
-
-.nopad{
-    font-size: x-large;
-    padding-left: 35px;
-}
-
-.sipad{
-    font-size: x-large;
-    padding-left: 70px;
-}
-
-.nombreq{
-    text-align: left;
-    display: inline-block;
-}
-
-.inputs{
-   display: flex;
-   justify-content: center;
-}
-
-.opinion_2{
- text-align: center;
- background-color: whitesmoke;
- border: 1px solid black    ;
-}
-
-.ubic{
-    background-color: black ;
-    color: white;
-    border: 2px solid red;
-}
-
-.enterate{
-    padding: 0;
-    margin: 0;
-    text-align: center;
-    border: 1px solid red;
-}
-
-.locales{
     text-align: center;
     background-color: whitesmoke;
-    color: black;
+    border: 1px solid black;
+   }
+   /* finaliza html nosotros */
+   /* mobile first seccion contacto */
+   .contacto{
+    text-align: center;
+    margin-bottom: 5px;
+   }
+   .sub_cont{
     font-size: 20px;
-    display: flex;
-    justify-content: space-around;
-    display: flex;
-    text-decoration: underline;  
-}
+    color: white;
+    background-color: rgb(224, 65, 65) ;
+    font-weight: 300;
+    margin: auto;
+   }
 
-.locales p{
+   .formulario {
+    text-align: center;
+    display: flex;
+    flex-direction: column; 
+    border-radius: 4px;
+    border: 2px solid red;
+    background-color: #fff;  
+    margin-top: 5px;
+  
+ }
+    .contrasena{
+        margin-top: 3px;
+    }
+    .inputs{
+        display: flex;
+        justify-content: center;
+    }
+
+    .fondo{
+        width: 100%;
+    }
+    .comentario_contacto{
+        width: 98%;
+    }
+    /* finaliza seccion contacto */
+
+    /* inicia sección "nuestra ubicacion */
+    .ubicacion{
+        text-align: center;
+    }
+    .enterate{
+        text-align: center;   
+    }
+    
+    .frames{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+    }
+   .subtitulos{
+    display: none;
+   }
+   
+   .casa{
     color: black;
-    font-weight: 500;
-    padding: 18px;
+    font-size: 20px;   
+    text-decoration: underline;
+    text-align: center;  
+   }
+/* finaliza sección ubicación */
+/* comienza html "gracias" linkeado con boton enviar de contacto*/
+  
+.gracias_totales{
+    font-size: 25px;
+    text-align: center;
 }
-
-.frames{
-    display: flex;
-    justify-content: space-around;
-    padding: 18px;    
+.agradecimiento{
+    text-align: center;
+    font-size: 20px;
+  }
+  .img_susc{
+    width: 90%;
 }
+/* finaliza html gracias */
 
-.frame{
-    border:1px solid red;
-}
 
-/* aplica para los footers de todas las secciones html */
-footer{
+   textarea{
+       width:400px;    
+       border: 2px solid #990000
+   }
+/* inicio footer */
+footer {
     color: rgb(52, 52, 52);
     text-align: center;
     padding-top: 10px;
 }
-footer .copy{
+
+footer .copy {
     font-family: 'Cormorant SC', serif;
 }
-.copy{
+
+.copy {
     color: black;
     font-weight: bold;
     border: 2px solid black;
+    margin: 5px;
 }
-/* finaliza estilo de footer */
+
+/* final footer */
+
+/* media query para pantallas intermedias*/
+@media (min-width: 481px) {
+    h1 {
+        text-align: center;
+    }
+   
+}
+ /* media query para desktop */
+@media (min-width: 768px)
+ {
+    .menu{
+        display: flex;     
+    }
+    .menu_btn{
+        display: none;
+    }
+    .logo{
+        position: fixed; 
+        z-index: 1;
+        width: 100px;
+        height: 75px;
+    }   
+    .botonera{
+        display: flex;
+        width: 100%;
+        height: 75px;
+        text-align: center;
+        background-color: black;
+        font-size: 0;
+        position: fixed;
+        justify-content: space-evenly;
+    }  
+    .botonera ul{
+       list-style: none;
+        font-size: 16px; 
+        margin: 0;
+        padding: 0;   
+    }
+    .botonera ul li{
+        list-style: none;
+        display: inline-block;
+        padding: 16px;     
+    }  
+    .botonera ul li a{
+        text-decoration: none;
+        color: white;
+        font-weight: 500;
+    }   
+    .botonera ul li a:hover{
+        text-decoration: underline;
+        color: rgb(251, 95, 95);
+    }
+    a{
+        transition-property: color;
+        transition-duration: 0.5s;
+    }  
+    .imagen_fondo{
+        height: 270px;
+     margin-block-start: 35px;
+    }
+ }
+    @media(min-width:1024px){
+
+     .botonera ul{
+            list-style: none;
+             font-size: 20px; 
+             margin: 0;
+             padding: 0;   
+     }
+    .botonera ul li{
+             list-style: none;
+             display: inline-block;
+             padding: 18px;     
+     } 
+      
+    .grilla{
+        width: 60%;
+    }
+    .info{
+        font-size: 20px;
+    }
+
+    /* media query para contacto */
+    .formulario{
+        width: 50%;
+        margin-left: 400px;
+        margin-top: 10px;
+    }
+    .fondo{
+        width: 90%;
+        margin-left: 60px;
+        height: 350px;
+        margin-top: 10px;
+    }
+    .comentario_contacto{
+        width: 50%;
+        margin-left: 400px ;
+        height: 150px;
+    }
+    /* finaliza media query para seccion contacto */
+    /* inicia media query para sección ubicación */
+
+    .subtitulos{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .frames{
+        display: flex;
+        justify-content: space-evenly;
+        padding: 18px; 
+        flex-direction: row; 
+       
+    }
+    
+    .frame{
+        border:1px solid red;
+        
+    
+    }
+    .local{
+        color: black;
+        font-size: 20px;   
+        text-decoration: underline;   
+    }
+
+    .casa{
+        display: none;
+    }
+
+    /* inicia media query para html gracias */
+    .img_susc{
+        margin-left: 37%;
+    }
+    
+} 
+
+
