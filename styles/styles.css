@@ -23,36 +23,73 @@ ul {
 }
 
 /* header index mobile first */
-.menu {
+.menu{
     display: flex;
     background-color: black;
-    justify-content: space-between;
-    height: 40px;
+    position: relative;
+   
+}
+.container{
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+    display: flex;
+}
+.menu_content{
+    display: flex;
+    justify-content: flex-end;
+    flex: 1;
+    align-items: center;
 }
 
-.menu_btn {
-    height: 20px;
-    margin-top: 10px;
-    margin-right: 10px;
+.botonera ul{
+    display: flex;
+    justify-content: center;
+    column-gap: 15px;
+    row-gap: 5px   
+
 }
-
-
-
+.botonera li{
+    text-align: center;
+    margin-left: 5px;
+}
+.botonera a{
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+    line-height: 100%;
+    display: block;
+}
+.menu_btn{
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    border: 2px solid white;
+   
+}
+#menu_btn{
+     display: none; 
+}
+#menu_btn:checked + .botonera{
+    display: flex;
+}
 .imagen_fondo {
     border: 0;
     padding: 0;
     width: 100%;
 }
 
-.logo {
-    top: 0;
-    left: 0;
-    padding-top: 0;
-
+.logo 
+ {
+        top: 0;
+        left: 0;
+        padding-top: 0;    
 }
 
 .botonera{
     display: none;
+    background-color: black;
 }
 /* estilos para titulos y sub */
 h1 {
@@ -316,21 +353,44 @@ footer .copy {
 }
 
 /* final footer */
+/* media query para estilos de mobile */
+@media (max-width: 767px){
+   
+    .botonera{
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 50%;
+        width: 90%;
+        max-width: 300px;
+        transition: left 0.2s linear;
+    }
+    .botonera ul{
+       flex-direction: column;
+        flex: 1;
+    }
 
-/* media query para pantallas intermedias*/
-@media (min-width: 481px) {
     h1 {
         text-align: center;
     }
-   
+   .botonera a{
+        padding: 10px;
+   }
 }
+
+    
+
  /* media query para desktop */
 @media (min-width: 768px)
  {
+    .logo{
+        width: 300px;
+    }
     .menu{
         display: flex;     
     }
-    .menu_btn{
+    #menu_btn,
+    .menu_boton{
         display: none;
     }
     .logo{
@@ -351,9 +411,10 @@ footer .copy {
     }  
     .botonera ul{
        list-style: none;
-        font-size: 16px; 
+        font-size: 18px; 
         margin: 0;
-        padding: 0;   
+        padding: 0; 
+        align-items: center
     }
     .botonera ul li{
         list-style: none;
@@ -364,6 +425,7 @@ footer .copy {
         text-decoration: none;
         color: white;
         font-weight: 500;
+        font-size: 20px;
     }   
     .botonera ul li a:hover{
         text-decoration: underline;
