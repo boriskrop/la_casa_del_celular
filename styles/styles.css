@@ -249,6 +249,9 @@ padding-top: 0;
     background-color: whitesmoke;
     border: 1px solid black;
    }
+   .resena{
+    width: 300px;
+   }
    /* finaliza html nosotros */
    /* mobile first seccion contacto */
    .contacto{
