@@ -325,7 +325,12 @@ padding-top: 0;
     font-size: 20px;
   }
   .img_susc{
-    width: 90%;
+    width: 100%;
+}
+.img_susc img{
+    width: 250px;
+    height: 200px;
+    margin-left: 25px;
 }
 /* finaliza html gracias */
 
@@ -361,7 +366,7 @@ footer .copy {
         top: 0;
         left: 0;
         height: 50%;
-        width: 90%;
+        width: 75%;
         max-width: 300px;
         transition: left 0.2s linear;
     }
@@ -511,7 +516,7 @@ footer .copy {
 
     /* inicia media query para html gracias */
     .img_susc{
-        margin-left: 37%;
+        margin-left: 40%;
     }
     
 } 

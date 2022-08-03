@@ -18,13 +18,18 @@
 <body>
 	<!-- inicio menú de navegación -->
     <header class="menu">
-		<div>
-			<a href="index.html"> <img class="logo" src="imagenes/logo_menu.jpg" alt="logo_la_casa_del_celular"
+      
+		<div class="container">
+		  <div class="logo">
+			<a href="index.html"><img src="imagenes/logo_menu.jpg" alt="logo_la_casa_del_celular"
 					title="logo" width="50px"></a>
-		</div>
-		<button class="menu_btn">Menú</button>
-		<nav class="botonera">
+		  </div>
+	  </div>
+		<div class="menu_content">
+		  <label class="menu_btn" for="menu_btn">Menú</label>
+		  <input id="menu_btn" type="checkbox">
   
+		  <nav class="botonera">   
 			<ul>
 				<li><a href="index.html">Inicio</a></li>
 				<li><a href="productos.html">Productos</a> </li>
@@ -32,7 +37,9 @@
 				<li><a href="contacto.html">Contacto</a></li>
 				<li><a href="#">Donde estamos</a></li>
 			</ul>
-		</nav>
+			</nav>
+		  </div>
+	  </div>
 	</header>
 	<div>
 		<img class="imagen_fondo" src="imagenes/la_casa_del_celular.png" alt="grupo_celular">
