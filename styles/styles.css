@@ -405,11 +405,12 @@ footer .copy {
         width: 100%;
         height: 75px;
         text-align: center;
-        background-color: black;
+        background-image: linear-gradient(to top, white 0%, transparent 15%);
         font-size: 0;
         position: fixed;
         justify-content: space-evenly;
     }  
+   
     .botonera ul{
        list-style: none;
         font-size: 18px; 
@@ -431,14 +432,24 @@ footer .copy {
     .botonera ul li a:hover{
         text-decoration: underline;
         color: rgb(251, 95, 95);
+       
     }
+
     a{
         transition-property: color;
         transition-duration: 0.5s;
+        
     }  
     .imagen_fondo{
         height: 270px;
      margin-block-start: 35px;
+    }
+    .oferta img:hover{
+        transition: all 0.2s ease-in-out;
+        width: 100%;
+    }
+    .oferta img:hover{
+        transform: scale(1);
     }
  }
     @media(min-width:1024px){
