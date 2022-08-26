@@ -144,41 +144,27 @@ h3 {
     text-decoration: underline;
 
 }
-
-.fundas {
+@mixin containers {
     display: flex;
     padding-bottom: 200px;
-    padding-top: 0;
+    padding: top 0;
     width: 99%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     border: 1px solid black;
     text-align: center;
+}
+.fundas {
+    @include containers;
 }
 
 .celulares {
-    display: flex;
-    padding-bottom: 200px;
-    padding: top 0;
-    width: 99%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    border: 1px solid black;
-    text-align: center;
+    @include containers;
 }
 
 .accesorios {
-    display: flex;
-    padding-bottom: 200px;
-    padding: top 0;
-    width: 99%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    border: 1px solid black;
-    text-align: center;
+    @include containers;
 }
 
 /* finaliza mobile first productos */
