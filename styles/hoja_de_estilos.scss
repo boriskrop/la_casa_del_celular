@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Cormorant+SC&display=swap');
 
 * {
     margin: 0;
@@ -23,7 +23,11 @@ body {
 
     .navbar {
         font-size: 20px;
+       
+        
     }
+    
+    
 }
 
 .imagen_fondo {
@@ -110,6 +114,8 @@ h3 {
 /* mobile first para productos */
 .productos {
     text-align: center;
+    color: white;
+    background-color: black;
 }
 
 .caja {
@@ -180,6 +186,8 @@ h3 {
 
 .nosotros {
     text-align: center;
+    background-color: black;
+    color: white;
 }
 
 .descripcion {
@@ -212,6 +220,8 @@ h3 {
 .contacto {
     text-align: center;
     margin-bottom: 5px;
+    background-color: black;
+    color: white;
 }
 
 .sub_cont {
@@ -252,6 +262,8 @@ h3 {
 
 .ubicacion {
     text-align: center;
+    background-color: black;
+    color: white;
 }
 
 .enterate {
@@ -335,12 +347,14 @@ footer {
 
     h1 {
         text-align: center;
+        background-color: black;
     }
 }
 
 /* media query para desktop */
 @media (min-width: 768px) {
-
+    
+   
     .logo {
         width: 300px;
         z-index: 1;
@@ -364,6 +378,9 @@ footer {
 }
 
 @media(min-width:1024px) {
+    .menu{
+        background-color: black;
+    }
     .fondo {
         width: 90%;
         margin-left: 60px;

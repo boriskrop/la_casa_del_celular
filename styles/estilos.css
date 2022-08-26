@@ -88,7 +88,9 @@ h3 {
 /* finaliza index */
 /* mobile first para productos */
 .productos {
-  text-align: center; }
+  text-align: center;
+  color: white;
+  background-color: black; }
 
 .caja {
   margin: 130px;
@@ -148,7 +150,9 @@ h3 {
 /* finaliza mobile first productos */
 /* seccion nosotros */
 .nosotros {
-  text-align: center; }
+  text-align: center;
+  background-color: black;
+  color: white; }
 
 .descripcion {
   background-color: whitesmoke;
@@ -174,7 +178,9 @@ h3 {
 /* mobile first seccion contacto */
 .contacto {
   text-align: center;
-  margin-bottom: 5px; }
+  margin-bottom: 5px;
+  background-color: black;
+  color: white; }
 
 .sub_cont {
   font-size: 20px;
@@ -205,7 +211,9 @@ h3 {
 /* finaliza seccion contacto */
 /* inicia sección "nuestra ubicacion */
 .ubicacion {
-  text-align: center; }
+  text-align: center;
+  background-color: black;
+  color: white; }
 
 .enterate {
   text-align: center; }
@@ -268,7 +276,8 @@ footer .copy {
     .botonera a {
       padding: 10px; }
   h1 {
-    text-align: center; } }
+    text-align: center;
+    background-color: black; } }
 
 /* media query para desktop */
 @media (min-width: 768px) {
@@ -286,6 +295,8 @@ footer .copy {
     transform: scale(1); } }
 
 @media (min-width: 1024px) {
+  .menu {
+    background-color: black; }
   .fondo {
     width: 90%;
     margin-left: 60px;
