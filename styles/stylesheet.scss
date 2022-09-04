@@ -71,7 +71,7 @@ h2 {
 
 /* primera sección con display grid */
 .grilla {
-    width: 90%;
+    width: 100%;
     margin: auto;
     margin-top: 50px;
     display: grid;
@@ -239,7 +239,7 @@ h3 {
 }
 
 .comentario_contacto {
-    width: 310px;
+    width: 100%;
 }
 
 /* finaliza seccion contacto */
@@ -311,25 +311,6 @@ footer {
 /* media query para estilos de mobile */
 
 @media (max-width: 767px) {
-    .botonera {
-        position: fixed;
-        top: 0;
-        left: 0;
-        height: 50%;
-        width: 75%;
-        max-width: 300px;
-        transition: left 0.2s linear;
-
-        ul {
-            flex-direction: column;
-            flex: 1;
-        }
-
-        a {
-            padding: 10px;
-        }
-
-    }
 
     h1 {
         text-align: center;
@@ -341,6 +322,7 @@ footer {
 @media (min-width: 768px) {
     
    
+    
     .logo {
         width: 300px;
         z-index: 1;
@@ -364,6 +346,10 @@ footer {
 }
 
 @media(min-width:1024px) {
+    .grilla{
+        width: 50%;
+        
+    }
     .menu{
         background-color: black;
     }
