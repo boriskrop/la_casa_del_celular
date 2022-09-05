@@ -1,411 +1,417 @@
     @import url('https://fonts.googleapis.com/css2?family=Cormorant+SC&display=swap');
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Open Sans', sans-serif;
-    background-color: whitesmoke;
-    overflow-x: hidden;
-    width: 100%;
-    margin: auto;
-    text-decoration: none;
-}
-
-/* header index mobile first */
-.menu {
-    display: flex;
-    background-color: black;
-    position: relative;
-
-    .navbar {
-        font-size: 20px;
-       
-        
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
     }
-    
-    
-}
 
-.imagen_fondo {
-    border: 0;
-    padding: 0;
-    width: 100%;
-}
-
-.logo {
-    top: 0;
-    left: 0;
-    padding-top: 0;
-}
-
-.botonera {
-    display: none;
-    background: black;
-}
-
-/* estilos para titulos y sub */
-.h1 {
-    background-color: black;
-    color: white;
-    margin-top: 0;
-    text-align: center;
-    background-color: black;
-}
-
-h2 {
-    color: white;
-    text-align: center;
-    background-color: black;
-}
-
-/* contenido de index */
-.info {
-    text-align: center;
-    font-size: 15px;
-    margin-top: 0;
-}
-
-/* primera sección con display grid */
-.grilla {
-    width: 100%;
-    margin: auto;
-    margin-top: 50px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    row-gap: 20px;
-    column-gap: 20px;
-    justify-content: space-around;
-    margin-bottom: 50px;
-
-    img {
-        width: 100%;
-    }
-}
-
-.grilla>div {
-    box-shadow: 0px 20px 40px -10px;
-    display: flex
-}
-
-/* inicio de segunda sección con display flex */
-
-h3 {
-    text-align: center;
-}
-
-.oferta {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    img {
-        width: 90%;
-        margin-top: 5px;
-        margin-bottom: 5px;
-    }
-}
-
-/* finaliza index */
-
-/* mobile first para productos */
-.productos {
-    text-align: center;
-    color: white;
-    background-color: black;
-}
-
-.caja {
-    margin: 130px;
-    height: 30px;
-    margin-top: 115px;
-    padding-top: 0;
-
-    img {
-        box-shadow: 0.2em 0 3.5em #080707;
+    body {
+        font-family: 'Open Sans', sans-serif;
         background-color: whitesmoke;
-        width: 200px;
-        height: 200px;
-        border-radius: 30px;
-        border: 2px solid rgb(9, 9, 81);
-    }
-}
-
-.tit {
-    color: black;
-    text-align: center;
-    background-color: rgb(224, 65, 65);
-    width: 100%;
-    height: 40px;
-    font-size: 25px;
-    text-decoration: underline;
-
-}
-@mixin containers {
-    display: flex;
-    padding-bottom: 200px;
-    padding: top 0;
-    width: 99%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    border: 1px solid black;
-    text-align: center;
-}
-.fundas {
-    @include containers;
-}
-
-.celulares {
-    @include containers;
-}
-
-.accesorios {
-    @include containers;
-}
-
-/* finaliza mobile first productos */
-/* seccion nosotros */
-
-.nosotros {
-    text-align: center;
-    background-color: black;
-    color: white;
-}
-
-.descripcion {
-    background-color: whitesmoke;
-    margin: 0;
-    font-size: 14px;
-    text-align: center;
-}
-
-.fotoslocal {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-}
-
-.opinion {
-    text-align: center;
-    background-color: whitesmoke;
-    border: 1px solid black;
-
-    .resena {
-        width: 300px;
-    }
-}
-
-/* finaliza html nosotros */
-/* mobile first seccion contacto */
-.contacto {
-    text-align: center;
-    margin-bottom: 5px;
-    background-color: black;
-    color: white;
-}
-
-.sub_cont {
-    font-size: 20px;
-    color: white;
-    background-color: rgb(224, 65, 65);
-    font-weight: 300;
-    margin: auto;
-}
-
-.formulario {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    border-radius: 4px;
-    border: 2px solid red;
-    background-color: #fff;
-    margin-top: 5px;
-
-}
-
-.inputs {
-    display: flex;
-    justify-content: center;
-}
-
-.fondo {
-    width: 100%;
-}
-
-.comentario_contacto {
-    width: 100%;
-}
-
-/* finaliza seccion contacto */
-
-/* inicia sección "nuestra ubicacion */
-
-.ubicacion {
-    text-align: center;
-    background-color: black;
-    color: white;
-}
-
-.enterate {
-    text-align: center;
-}
-
-.frames {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-
-.subtitulos {
-    display: none;
-}
-
-.casa {
-    color: black;
-    font-size: 20px;
-    text-decoration: underline;
-    text-align: center;
-}
-
-/* finaliza sección ubicación */
-/* comienza html "gracias" linkeado con boton enviar de contacto*/
-main {
-    .gracias_totales {
-        font-size: 25px;
-        text-align: center;
+        overflow-x: hidden;
+        width: 100%;
+        margin: auto;
+        text-decoration: none;
     }
 
-    .agradecimiento {
-        text-align: center;
-        font-size: 20px;
-    }
-}
-
-/* finaliza html gracias */
-textarea {
-    width: 400px;
-    border: 2px solid #990000
-}
-footer {
-    color: rgb(52, 52, 52);
-    text-align: center;
-    padding-top: 10px;
-}
-footer {
-    .copy {
-        font-family: 'Cormorant SC', serif;
-        color: black;
-        font-weight: bold;
-        border: 2px solid black;
-        margin: 5px;
-    }
-}
-
-/* final footer */
-/* media query para estilos de mobile */
-
-@media (max-width: 767px) {
-
-    h1 {
-        text-align: center;
+    /* header index mobile first */
+    .menu {
+        display: flex;
         background-color: black;
-    }
-}
+        position: relative;
 
-/* media query para desktop */
-@media (min-width: 768px) {
-    
-   
-    
-    .logo {
-        width: 300px;
-        z-index: 1;
-        width: 100px;
-        height: 55px;
+        .navbar {
+            font-size: 20px;
+
+
+        }
+
+
     }
 
     .imagen_fondo {
-        height: 270px;
-        margin: auto;
-
-
-    }
-
-    .oferta img:hover {
-        transition: all 0.2s ease-in-out;
+        border: 0;
+        padding: 0;
         width: 100%;
-        transform: scale(1);
     }
 
-}
-
-@media(min-width:1024px) {
-    .grilla{
-        width: 50%;
-        
+    .logo {
+        top: 0;
+        left: 0;
+        padding-top: 0;
     }
-    .menu{
+
+    .botonera {
+        display: none;
+        background: black;
+    }
+
+    /* estilos para titulos y sub */
+    .h1 {
+        background-color: black;
+        color: white;
+        margin-top: 0;
+        text-align: center;
         background-color: black;
     }
-    .fondo {
-        width: 90%;
-        margin-left: 60px;
-        height: 350px;
-        margin-top: 10px;
+
+    h2 {
+        color: white;
+        text-align: center;
+        background-color: black;
     }
 
-    .formulario {
-        width: 50%;
-        margin-left: 400px;
-        margin-top: 10px;
+    /* contenido de index */
+    .info {
+        text-align: center;
+        font-size: 15px;
+        margin-top: 0;
     }
 
-    .opinion_2 {
-        .comentario_contacto {
-            width: 50%;
-            margin-left: 400px;
-            height: 150px;
+    /* primera sección con display grid */
+    .grilla {
+        width: 100%;
+        margin: auto;
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        row-gap: 20px;
+        column-gap: 20px;
+        justify-content: space-around;
+        margin-bottom: 50px;
+
+        img {
+            width: 100%;
         }
     }
 
-
-/* finaliza media query para seccion contacto */
-    /* inicia media query para sección ubicación */
-
-    .subtitulos{
-        display: flex;
-        justify-content: space-evenly;
+    .grilla>div {
+        box-shadow: 0px 20px 40px -10px;
+        display: flex
     }
 
-    .frames{
-        display: flex;
-        justify-content: space-evenly;
-        padding: 18px;
-        flex-direction: row;
+    /* inicio de segunda sección con display flex */
 
-        .frame{
-            border: 1px solid red;
-        }     
+    h3 {
+        text-align: center;
     }
 
-    .local{
+    .oferta {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        img {
+            width: 90%;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+    }
+
+    /* finaliza index */
+
+    /* mobile first para productos */
+    .productos {
+        text-align: center;
+        color: white;
+        background-color: black;
+    }
+
+    .caja {
+        margin: 130px;
+        height: 30px;
+        margin-top: 115px;
+        padding-top: 0;
+
+        img {
+            box-shadow: 0.2em 0 3.5em #080707;
+            background-color: whitesmoke;
+            width: 200px;
+            height: 200px;
+            border-radius: 30px;
+            border: 2px solid rgb(9, 9, 81);
+        }
+    }
+
+    .tit {
         color: black;
-        font-size: 20px;   
-        text-decoration: underline;   
+        text-align: center;
+        background-color: rgb(224, 65, 65);
+        width: 100%;
+        height: 40px;
+        font-size: 25px;
+        text-decoration: underline;
+
     }
 
-    .casa{
+    @mixin containers {
+        display: flex;
+        padding-bottom: 200px;
+        padding: top 0;
+        width: 99%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        border: 1px solid black;
+        text-align: center;
+    }
+
+    .fundas {
+        @include containers;
+    }
+
+    .celulares {
+        @include containers;
+    }
+
+    .accesorios {
+        @include containers;
+    }
+
+    /* finaliza mobile first productos */
+    /* seccion nosotros */
+
+    .nosotros {
+        text-align: center;
+        background-color: black;
+        color: white;
+    }
+
+    .descripcion {
+        background-color: whitesmoke;
+        margin: 0;
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .fotoslocal {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+
+    .opinion {
+        text-align: center;
+        background-color: whitesmoke;
+        border: 1px solid black;
+
+        .resena {
+            width: 300px;
+        }
+    }
+
+    /* finaliza html nosotros */
+    /* mobile first seccion contacto */
+    .contacto {
+        text-align: center;
+        margin-bottom: 5px;
+        background-color: black;
+        color: white;
+    }
+
+    .sub_cont {
+        font-size: 20px;
+        color: white;
+        background-color: rgb(224, 65, 65);
+        font-weight: 300;
+        margin: auto;
+    }
+
+    .formulario {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        border-radius: 4px;
+        border: 2px solid red;
+        background-color: #fff;
+        margin-top: 5px;
+
+    }
+
+    .inputs {
+        display: flex;
+        justify-content: center;
+    }
+
+    .fondo {
+        width: 100%;
+    }
+
+    .comentario_contacto {
+        width: 100%;
+    }
+
+    /* finaliza seccion contacto */
+
+    /* inicia sección "nuestra ubicacion */
+
+    .ubicacion {
+        text-align: center;
+        background-color: black;
+        color: white;
+    }
+
+    .enterate {
+        text-align: center;
+    }
+
+    .frames {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .subtitulos {
         display: none;
     }
 
-    /* inicia media query para html gracias */
-    .img_susc{
-        margin-left: 40%;
+    .casa {
+        color: black;
+        font-size: 20px;
+        text-decoration: underline;
+        text-align: center;
     }
-}
+
+    /* finaliza sección ubicación */
+    /* comienza html "gracias" linkeado con boton enviar de contacto*/
+    main {
+        .gracias_totales {
+            font-size: 25px;
+            text-align: center;
+        }
+
+        .agradecimiento {
+            text-align: center;
+            font-size: 20px;
+        }
+    }
+
+    /* finaliza html gracias */
+    textarea {
+        width: 400px;
+        border: 2px solid #990000
+    }
+
+    footer {
+        color: rgb(52, 52, 52);
+        text-align: center;
+        padding-top: 10px;
+    }
+
+    footer {
+        .copy {
+            font-family: 'Cormorant SC', serif;
+            color: black;
+            font-weight: bold;
+            border: 2px solid black;
+            margin: 5px;
+        }
+    }
+
+    /* final footer */
+    /* media query para estilos de mobile */
+
+    @media (max-width: 767px) {
+
+        h1 {
+            text-align: center;
+            background-color: black;
+        }
+    }
+
+    /* media query para desktop */
+    @media (min-width: 768px) {
+
+
+
+        .logo {
+            width: 300px;
+            z-index: 1;
+            width: 100px;
+            height: 55px;
+        }
+
+        .imagen_fondo {
+            height: 270px;
+            margin: auto;
+
+
+        }
+
+        .oferta img:hover {
+            transition: all 0.2s ease-in-out;
+            width: 100%;
+            transform: scale(1);
+        }
+
+    }
+
+    @media(min-width:1024px) {
+        .grilla {
+            width: 50%;
+
+        }
+
+        .menu {
+            background-color: black;
+        }
+
+        .fondo {
+            width: 90%;
+            margin-left: 60px;
+            height: 350px;
+            margin-top: 10px;
+        }
+
+        .formulario {
+            width: 50%;
+            margin-left: 400px;
+            margin-top: 10px;
+        }
+
+        .opinion_2 {
+            .comentario_contacto {
+                width: 50%;
+                margin-left: 400px;
+                height: 150px;
+            }
+        }
+
+
+        /* finaliza media query para seccion contacto */
+        /* inicia media query para sección ubicación */
+
+        .subtitulos {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .frames {
+            display: flex;
+            justify-content: space-evenly;
+            padding: 18px;
+            flex-direction: row;
+
+            .frame {
+                border: 1px solid red;
+            }
+        }
+
+        .local {
+            color: black;
+            font-size: 20px;
+            text-decoration: underline;
+        }
+
+        .casa {
+            display: none;
+        }
+
+        /* inicia media query para html gracias */
+        .img_susc {
+            margin-left: 40%;
+        }
+    }
